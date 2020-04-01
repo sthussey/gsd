@@ -16,12 +16,11 @@ has a few layers that should cohesive, but not coupled.
 
 Create a step including inputs and outputs.
 
-I/O items possibly can be classified to allow better composition.
+I/O is composed of resources, each of which is a plugin that satisfies a very simple interface:
 
-  * Code Data (i.e. SCM)
-  * Generic Data
-  * Metadata
-  * Configuration Data
+  * Get
+  * Put (Create or Update)
+  * Delete
 
 ## Step Organization
 
